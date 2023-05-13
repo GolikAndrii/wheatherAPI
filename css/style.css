@@ -9,8 +9,8 @@
     --off-white:#e5e5e5;
     --transp-white-1: rgba(255,255,255,0.25);
     --transp-white-2: rgba(255,255,255,0.1);
-    --blue-1: #9d9d9d;
-    --blue-2: #4f4f4f;
+    --blue-1: #7072e7;
+    --blue-2: #333479;
     --shadow:rgba(3,46,87,0.2);
 
 }
@@ -142,4 +142,27 @@ height: 100vh;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+.stick{
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    min-width: 50%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.flags{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+@media  screen and (max-width: 450px) {
+    .wrapper{
+        font-size: 14px;
+    }
 }
