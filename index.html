@@ -14,7 +14,16 @@
                 <p>UA</p>
             </div>
             <div class="toggle">
-                <p>dark</p>
+                <input type="checkbox" id="toggle" name="toggle" value="is_on">
+                <label for="toggle" class="toy-toggle">
+                    <span class="border1"></span>
+                    <span class="border2"></span>
+                    <span class="border3"></span>
+                    <span class="handle">
+                        <span class="handle-off"></span>
+                        <span class="handle-on"></span>
+	                </span>
+                </label>
             </div>
         </nav>
 </div>
@@ -23,7 +32,7 @@
     <div class="shape shape-2"></div>
     <div class="container">
         <div class="search-container">
-            <input type="text" placeholder="Enter a city name" id="city" value="Kiev">
+            <input class="input-search" type="text" placeholder="Enter a city name" id="city" value="Kiev">
             <button id="search-btn">Search</button>
         </div>
         <div id="result"></div>
