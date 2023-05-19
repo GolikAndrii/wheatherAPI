@@ -1,6 +1,14 @@
+let cityRef = document.getElementById("city")
+
+fetch ('http://ip-api.com/json/?fields=61439')
+    .then((res)=>res.json())
+    .then((res)=>{
+        cityRef.value = res.city;
+    })
+
 let result = document.getElementById("result")
 let searchBtn = document.getElementById("search-btn")
-let cityRef = document.getElementById("city")
+
 let getWeather = ()=>{
     let cityValue = cityRef.value;
     if(cityValue.length ==0){
